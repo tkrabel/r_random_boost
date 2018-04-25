@@ -1,5 +1,5 @@
 ##
-##                              TEST
+##                        HOW TO USE RANDOM BOOST
 ##
 
 source("predict_rboost.R")
