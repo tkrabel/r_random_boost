@@ -2,8 +2,6 @@
 ##											  TREE
 ##
 
-library(rpart)
-
 #	The tree-building function. max_depth is the crucial parameter that determines
 # a tree's depth
 
