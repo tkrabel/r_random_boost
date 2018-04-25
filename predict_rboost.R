@@ -1,13 +1,12 @@
 ##
-##												PREDICT_RBOOST
+##												PREDICT.RBOOST
 ##
 
 library(magrittr)
 library(purrr)
 
-# rboost's predict function
-#
-#
+# :arg object:  Object of class "rboost"
+# :arg newdata: Data frame containing new cases (optional)
 
 predict.rboost <- function(object, newdata){
 
