@@ -35,6 +35,6 @@ rboost <- function(formula, data, params, randomize = TRUE) {
 	# Start training
 	bst <- rboost_train(formula, data, params, randomize)
 
-	bst
+	structure(bst, class = "rboost")
 }
 
