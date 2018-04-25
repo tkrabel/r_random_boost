@@ -3,6 +3,7 @@
 ##
 
 library(dplyr)
+library(rpart)
 
 # A convenient wrapper that checks user input an calls rboost_train, the
 # actual function that carries out the random boosting
