@@ -8,12 +8,12 @@ library(dplyr)
 # actual function that carries out the random boosting
 #
 # arguments:
-#		- formula: a formula
-#		- data: the training data on which to train the model
-#		- params: a list of parameters
-# 			- eta: learning rate
+#		:arg formula: a formula
+#		:arg data:    the dataframe on which to train the model
+#		:arg params:  a list of obligatory parameters
+# 			- eta:       learning rate
 #				- max_depth: the maximum depth a tree can have
-#				- n_rounds: number of boosting iterations
+#				- n_rounds:  number of boosting iterations
 
 rboost <- function(formula, data, params, randomize = TRUE) {
   
@@ -23,8 +23,6 @@ rboost <- function(formula, data, params, randomize = TRUE) {
 
 	if (any(idx == 0))
 		stop("Arguments are missing: ", paste(comp_args[idx == 0], collapse = ", "))
-
-	# data <- model.frame(formula, data) # only keep columns we need
 
 	comp_params <- c("eta", "max_depth", "n_rounds")
 	missing <- base::setdiff(comp_params, names(params))
