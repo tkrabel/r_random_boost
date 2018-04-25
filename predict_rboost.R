@@ -9,7 +9,7 @@ library(purrr)
 #
 #
 
-predict_rboost <- function(object, newdata){
+predict.rboost <- function(object, newdata){
 
 	# Extract info
 	eta <- object[["params"]][["eta"]]
